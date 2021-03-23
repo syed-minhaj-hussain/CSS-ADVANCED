@@ -29,6 +29,7 @@
     align-items: center;
     height: 100vh;
     justify-content: center;
+    background-color: dimgrey;
 }
 #card .card {
     display: flex;
@@ -70,6 +71,7 @@
     height: 100vh;
     justify-content: center;
     flex-wrap: wrap;
+    background-color:lavender;
 }
 #thumbnail .card {
     display: flex;
@@ -80,3 +82,131 @@
     justify-content: space-around;
     margin: 0.23rem;
 }
+/* Position */
+#position {
+    width: 500px;
+    height: 400px;
+    background-color: lightcoral;
+    padding: 1rem;
+    /* text-align: center; */
+    position: relative;
+    
+}
+#position .superscript{
+    position: relative;
+    font-size: 0.62rem;
+    top: -5px;
+    left: 2px;
+}
+#position .fixed {
+    border: 0.5px solid black;
+    padding: 0.4rem;
+    display: inline-block;
+    position: fixed; 
+    z-index: 1;
+    left: 10px;
+    bottom: 0;
+}
+#position .float {
+    border-radius: 50%;
+    padding: 0.3rem;
+    font-size: 1.25rem;
+    border: none;
+    background-color: crimson;
+    position: fixed;
+    bottom: 0;
+    left: 300px;
+}
+
+/* Modal */
+#modal {
+    position: fixed;
+    bottom: 100px;
+    left: 250px;
+}
+#modal .rectangle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 0.7rem; */
+    border: 1px solid black;
+    /* border-radius: 1rem;; */
+    background-color: teal;
+}
+#modal .rectangle .modal-header {
+    padding: 0.23rem;
+    background-color: crimson;
+    /* border-radius: 1.2rem; */
+}
+#modal .rectangle .modal-header span {
+    float: right;
+}
+#modal .rectangle .modal-body {
+    padding: 0.4rem;
+}
+#modal .rectangle .modal-body .body-main {
+    background-color: slategrey;
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+#modal .rectangle .modal-footer .close {
+    float: right;
+    padding: 0.25rem;
+    margin-top: 0.2rem;
+}
+
+/* Absolute */
+#absolute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#absolute .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 180px;
+    background-color: cornflowerblue;
+    padding: 0.5rem;
+}
+#absolute .card .card-img-abs {
+    position: relative;
+}
+#absolute .card .card-img-abs button {
+    position: absolute;
+    right: 8px;
+    top: 3px;
+    padding: 0.23rem;
+    border-radius: 50%;
+}
+
+/* Absolute-overlay */
+#absolute-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#absolute-overlay .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 180px;
+    background-color: cornflowerblue;
+    padding: 0.5rem;
+}
+#absolute-overlay .card .card-img-abs {
+    position: relative;
+}
+#absolute-overlay .card .card-img-abs span {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    left: 5px;
+    
+}
+
