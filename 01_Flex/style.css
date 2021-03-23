@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: rosybrown;
+}
+.row div {
+    background-color: red;
+    padding: 1rem;
+    margin-right: 0.25rem;
+}
+.row .first {
+    align-self: flex-start;
+}
+.row .second {
+    align-self: flex-end;
+}
+.row .last {
+    align-self: center;
+}
+/* Card Section */
+#card {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+#card .card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    background-color: salmon;
+    /* height: 500px; */
+    justify-content:center; 
+     /* align-items: center; */
+}
+/* Gorw-Shrink */
+#grow-shrink {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+#grow-shrink .card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    background-color: salmon;
+    height: 500px;
+    justify-content:space-evenly; 
+    margin-right: 1rem;
+     /* align-items: center; */
+}
+/* #grow-shrink .card:last-child {
+    flex-grow: 0;
+    flex-shrink: 5;
+} */
+
+/* Thumbnail */
+#thumbnail  {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#thumbnail .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    background-color: slategrey;
+    padding: 1rem;
+    justify-content: space-around;
+    margin: 0.23rem;
+}
